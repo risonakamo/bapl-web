@@ -11,6 +11,12 @@ onMount(()=>{
 var videoElement:HTMLVideoElement;
 </script>
 
-<video autoplay loop muted bind:this={videoElement}>
-    <source src={Bapple}/>
-</video>
+<style lang="sass">
+    @use "./index.sass"
+</style>
+
+<div class="vid-contain">
+    <video autoplay loop muted bind:this={videoElement}>
+        <source src={Bapple}/>
+    </video>
+</div>
